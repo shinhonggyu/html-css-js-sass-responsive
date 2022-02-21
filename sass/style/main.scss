@@ -1,4 +1,17 @@
-h1 {
-  color: red;
-  background-color: pink;
+@mixin box-style($bg-color: yellow, $font-color: black) {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $bg-color;
+  color: $font-color;
+}
+
+.one {
+  @include box-style(red);
+}
+
+.two {
+  @include box-style(purple, yellow);
 }
