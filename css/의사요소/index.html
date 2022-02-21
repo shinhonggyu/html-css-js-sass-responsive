@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* first-line maker placeholder before after */
+      p::first-line {
+        color: red;
+      }
+      p::first-letter {
+        color: blue;
+      }
+      li::marker {
+        color: teal;
+        font-size: 60px;
+      }
+      /* 선택한 요소의 자식요소를 추가할수있다 */
+      /* before:: 자식요소중 맨앞에다 요소를 추가 */
+      /* after:: 자식요소중 맨뒤에다 요소를 추가 */
+      p::before {
+        content: "앞에다 추가한 텍스트";
+        color: blueviolet;
+        font-weight: 900;
+      }
+      p::after {
+        content: "뒤에다 추가한 텍스트";
+        color: yellowgreen;
+        font-weight: 100;
+      }
+    </style>
+  </head>
+  <body>
+    <p>원래 쓰여 있던 내용</p>
+  </body>
+</html>

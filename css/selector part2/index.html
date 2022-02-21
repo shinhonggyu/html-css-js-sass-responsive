@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 특성 선택자 */
+      /* [class$="ext"] {
+        color: blue;
+      }
+      [id^="uni"] {
+        color: red;
+      } */
+
+      /* 결합 선택자 */
+      /* - 자손 결합자 : 첫번째 선택자의 자손 */
+      /* div 요소 안에 위치하는 모든 p 요소 선택하기 */
+      div p {
+        color: white;
+      }
+      /* div 요소의 바로 아래에 위치하는 모든 p 요소를 선택하기 */
+      div > p {
+        color: white;
+      }
+      /* - 형제 결합자 : 첫번째 선택자의 형제 */
+      /* h1 요소의 뒤에 오는 형제 중 모든 p */
+      h1 ~ p {
+        color: red;
+      }
+      /*h1 요소의 바로 뒤에 오는 형제 p */
+      h1 + p {
+        color: blue;
+      }
+
+      .text + p {
+        color: orange;
+      }
+
+      p > span {
+        color: brown;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>선택자 연습하기</h1>
+    <p>1번 문단입니다 그냥 태그</p>
+    <p class="text">2번 문단입니다 클래스 있음</p>
+    <p id="unique">3번 문단입니다 아이디 있음</p>
+    <p class="text">4번 문단입니다 클래스 있음</p>
+    <p>5번 문단입니다 <span>스판 있는</span>태그</p>
+  </body>
+</html>

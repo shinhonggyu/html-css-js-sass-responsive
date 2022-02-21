@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* z-index는 모든 요소에 똑같이 적용되는것이아닌
+      position속성이 적용되어있는 position요소들에만  
+      */
+      * {
+        font-size: 24px;
+      }
+      div {
+        width: 100px;
+        height: 100px;
+        position: relative;
+      }
+      div:nth-child(1) {
+        background-color: yellow;
+      }
+      div:nth-child(2) {
+        background-color: cyan;
+        bottom: 50px;
+      }
+      div:nth-child(3) {
+        background-color: ivory;
+        bottom: 100px;
+      }
+      div:nth-child(4) {
+        background-color: purple;
+        bottom: 150px;
+      }
+      .first {
+        background-color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="first">1</div>
+    <div class="second">2</div>
+    <div class="third">3</div>
+    <div class="fourth">4</div>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.text {
+  display: table-cell;
+  vertical-align: middle;
+  animation-name: cursor;
+  animation-duration: 0.5s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  border-right: 2px solid black;
+}
