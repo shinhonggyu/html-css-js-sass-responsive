@@ -6,17 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>float</title>
     <style>
+      .c {
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        background-color: aqua;
+      }
       #a {
         width: 100px;
         height: 50px;
         background-color: orange;
-        float: right;
+        float: left;
       }
       #b {
         width: 100px;
         height: 50px;
         background-color: royalblue;
-        float: left;
+        float: right;
       }
       p {
         clear: both;
@@ -24,6 +30,7 @@
     </style>
   </head>
   <body>
+    <div class="c"></div>
     <div id="a"></div>
     <div id="b"></div>
     <p>안녕하세요 저는 세 번째 태그에요</p>
