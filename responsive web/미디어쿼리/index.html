@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미디어 쿼리</title>
+    <style>
+      img {
+        width: 200px;
+        height: 200px;
+      }
+
+      @media screen and (min-width: 800px) {
+        /* screen이 800px보다 커졌을때 */
+        img {
+          width: 400px;
+          height: 400px;
+        }
+      }
+
+      @media screen and (min-width: 1200px) {
+        /* screen이 800px보다 커졌을때 */
+        img {
+          width: 800px;
+          height: 800px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <img src="./pick1.jpg" />
+  </body>
+</html>
