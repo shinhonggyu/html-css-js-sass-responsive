@@ -1,0 +1,19 @@
+body {
+  background-color: #111;
+  color: #fff;
+  line-height: 140%;
+}
+
+.mycircle {
+  width: 30px;
+  height: 30px;
+  background-color: yellow;
+  border-radius: 15px;
+  position: absolute;
+}
+
+.goal {
+  width: 10px;
+  background-color: red;
+  position: absolute;
+}
