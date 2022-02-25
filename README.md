@@ -1,4 +1,7 @@
-**⭐javascript**
+**javascript**  
+**⭐EventTarget <- Window**  
+**⭐EventTarget <- Node <- Document**  
+**⭐EventTarget <- Node <- Element <- HTMLElment**
 
 **객체의 사전적 의미?**  
 실세계에 존재하는 대상 또는 생각할 수 있는 어떤 개념.
@@ -28,8 +31,6 @@
 이 속성을 이용하면 해당 문서에 접근할 수 있다.
 
 document는 다양한 API를 제공한다.
-
-**EventTarget <- Node <- Element <- HTMLElment**
 
 **내장생성자=내장객체(built-in object)**  
 자바스크립트는 처음부터 사용 할 수 있는 기본 객체 및 생성자를 제공하는데,  
