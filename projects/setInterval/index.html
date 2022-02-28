@@ -12,8 +12,8 @@
       let seconds = 1;
       let timer;
       timer = setInterval(function () {
-        document.querySelector("h1").textContent = seconds;
-        seconds += 1;
+        document.querySelector("h1").textContent = seconds++;
+        console.log(seconds);
         if (seconds > 5) {
           clearInterval(timer);
         }

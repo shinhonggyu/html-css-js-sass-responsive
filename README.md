@@ -3,6 +3,16 @@
 **⭐EventTarget <- Node <- Document**  
 **⭐EventTarget <- Node <- Element <- HTMLElment**
 
+**부모&자식&형제 노드**  
+|모든노드|요소 노드만|
+|-------|----------|
+|parentNode|parentElement|
+|childNodes|children|
+|firstChild|firstElementChild|
+|lastChild|lastElementChild|
+|previousSibling|previousElementSibling|
+|nextSibling|nextElementSibling|
+
 **객체의 사전적 의미?**  
 실세계에 존재하는 대상 또는 생각할 수 있는 어떤 개념.
 
