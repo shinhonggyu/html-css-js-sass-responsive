@@ -3,7 +3,6 @@ const timeElement = document.getElementById("time");
 
 function getTime() {
   const textNode = new Date();
-  todayElement.textContent = textNode;
   const year = textNode.getFullYear();
   const month = textNode.getMonth() + 1;
   const date = textNode.getDate();

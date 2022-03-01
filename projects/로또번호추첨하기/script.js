@@ -6,6 +6,7 @@ const lottoNumbers = [];
 const colors = ["tomato", "teal", "orange", "purple", "blue"];
 
 function paintNumber(number) {
+  console.log("printNumberFn");
   const eachNumDiv = document.createElement("div");
   let colorIndex = Math.floor(number / 10);
   eachNumDiv.classList.add("eachnum");
@@ -16,6 +17,7 @@ function paintNumber(number) {
 
 drawBtn.addEventListener("click", function () {
   for (let i = 0; lottoNumbers.length < 6; i++) {
+    console.log("for문");
     let ran = Math.floor(Math.random() * 45) + 1;
     if (lottoNumbers.indexOf(ran) === -1) {
       lottoNumbers.push(ran);
