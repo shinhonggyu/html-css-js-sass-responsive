@@ -3,16 +3,6 @@
 **⭐EventTarget <- Node <- Document**  
 **⭐EventTarget <- Node <- Element <- HTMLElment**
 
-**부모&자식&형제 노드**  
-|모든노드|요소 노드만|
-|-------|----------|
-|parentNode|parentElement|
-|childNodes|children|
-|firstChild|firstElementChild|
-|lastChild|lastElementChild|
-|previousSibling|previousElementSibling|
-|nextSibling|nextElementSibling|
-
 **객체의 사전적 의미?**  
 실세계에 존재하는 대상 또는 생각할 수 있는 어떤 개념.
 
@@ -41,6 +31,39 @@
 이 속성을 이용하면 해당 문서에 접근할 수 있다.
 
 document는 다양한 API를 제공한다.
+
+**DOM & EVENT**
+
+**부모&자식&형제 노드**  
+|모든노드|요소(html tag) 노드만|
+|-------|----------|
+|parentNode|parentElement|
+|childNodes|children|
+|firstChild|firstElementChild|
+|lastChild|lastElementChild|
+|previousSibling|previousElementSibling|
+|nextSibling|nextElementSibling|
+
+| NodeList                                 | HTMLCollection                    |
+| ---------------------------------------- | --------------------------------- |
+| 공통점은 유사배열, literable, for of순회 |
+| querySelectorAll                         | getElementsByTagName              |
+| 한번저장된값을계속사용                   | Node의 변경사항이 실시간으로 반영 |
+| childNodes                               | children                          |
+
+Node는 다양한 Type이 있다.
+
+**노드 생성&추가&복제**
+
+innerHTML은 textContent와 달리 마크업을 적용할수있지만 단점은 요소를 추가, 제거, 수정 할때마다 다시모든 html작성
+element Node, text Node를 만들고 추가해준다.
+
+nodeValue, textContent로 textNode수정할수있다.
+
+appendChild는 맨뒤로, insertBefore는 원하는 위치에 노드를 넣을수있다.  
+기존의 node를 전달하면 이동된다.  
+복제는 cloneNode(deep option)  
+삭제는 removeChild(요소)
 
 **내장생성자=내장객체(built-in object)**  
 자바스크립트는 처음부터 사용 할 수 있는 기본 객체 및 생성자를 제공하는데,  
